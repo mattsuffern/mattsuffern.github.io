@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mateo Suffern - Geometry</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mateo.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body id="page-top">
+
+
+<!-- Navbar and header-->
+<header class="masthead">
+    <canvas id="res-canvas"></canvas>
+    <div class="matnav-container">  
+        <nav class="navbar navbar-expand-lg" id="mainNav"> 
+              <!--<a class="navbar-brand" href="#page-top">Mateo</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>-->
+                    <!--<li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>-->
+                </ul>
+                <p id="fps-count"></p><!-- DO NOT DELETE THIS!!! needed for canvas animation-->
+            </div>
+        </nav>
+    </div>
+    <div class="mattitle-container">  
+        <div class="masthead-subheading">Mateo Suffern</div>
+        <div class="masthead-heading text-uppercase">Geometry and Dynamical Systems</div>
+    </div>
+</header>
+
+        
+
+<!-- About-->
+<section class="page-section" id="about">
+    <div class="container">   
+
+        <!-- card -->             
+        <div class="card">
+            <h5 class="card-header" style="background-color: #BCB6B6">About me</h5>
+            <div class="card-body">
+                <!--<h5 class="card-title">Special title treatment</h5>-->
+                <p class="card-text">Hi, I'm Mateo Suffern, a Master's student in Mathematical-Computational Modeling and Data Science at the University of Buenos Aires. 
+                My main research interest is geometry, supported by coursework in continuous modelling, complex networks, and topological data analysis and an ongoing project in network growth and self-similarity.
+                Currently, I'm preparing my Master's thesis on geometrical complexity applied to fluid dynamics. 
+                I'm also part of the ArtGAN Group at the Institute of Computer Science (UBA), where I work on synthetic facial expression generation, supervised by Professor Pablo Negri.</p>
+            </div>
+        </div><!-- card -->
+        
+        <br>
+                    
+        <!-- random group: card-columns -->
+        <div class="card-columns">
+
+            <div class="card text-center p-3" style="background-color: #BCB6B6; border-color: #BCB6B6">
+                <blockquote class="blockquote mb-0">
+                    <h5>Some random stuff</h5>
+                </blockquote>
+            </div>
+
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Network growth and self-similarity project</h5>
+                  <p class="card-text">Inducing monosemanticity on growing networks with arbitrary topology via predictive coding and self-similarity.</p>
+                  <p class="card-text"><small class="text-muted">since 2024</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="assets/img/about/heart.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <!--<h5 class="card-title">Card title</h5>-->
+                  <p class="card-text">Best picture I ever took</p>
+                  <p class="card-text"><small class="text-muted">January 2020</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Favourite books</h5>
+                  <p class="card-text">
+                      <ul>
+                        <li>Superintelligence: Paths, Dangers, Strategies /  Nick Bostrom</li>
+                        <li>1984 / George Orwell</li>
+                        <li>Birth of a Theorem: A Mathematical Adventure / Cédric Villani</li>
+                        <li>The Future of Spacetime / Stephen Hawking</li>
+                        <li>Fermat's Enigma: The Epic Quest to Solve the World's Greatest Mathematical Problem / Simon Singh</li>
+                    </ul>
+                  </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="assets/img/about/banksy.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <!--<h5 class="card-title">Card title</h5>-->
+                  <p class="card-text">I saw an original from Banksy</p>
+                  <p class="card-text"><small class="text-muted">March 2019</small></p>
+                </div>
+            </div>
+
+            <div class="card text-white text-center p-3" style="background-color: #BCB6B6; border-color: #BCB6B6">
+                <blockquote class="blockquote mb-0">
+                  <p>"Andábamos sin buscarnos, pero sabiendo que andábamos para encontrarnos."</p>
+                  <footer class="blockquote-footer">
+                    <small>
+                      Julio Cortazar in <cite title="Source Title">Rayuela</cite>
+                    </small>
+                  </footer>
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="assets/img/about/drawing.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <!--<h5 class="card-title">Card title</h5>-->
+                  <p class="card-text">Best drawing I ever did </p>
+                  <p class="card-text"><small class="text-muted">December 2020</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Face detection project</h5>
+                  <p class="card-text">Knowledge transfer project to RENAPER (National Registry of People), focusing on proof of life protocols funded by the National Ministry of Science and Technology.</p>
+                  <a target="_blank" href="https://www.conicet.gov.ar/un-equipo-conicet-genera-un-desarrollo-informatico-de-verificacion-segura-de-identidad/">CONICET blogpost [ES]</a>
+                  <p class="card-text"><small class="text-muted">in 2022, ArtGAN group</small></p>
+                </div>
+            </div>
+
+            <div class="card text-white text-center p-3" style="background-color: #BCB6B6; border-color: #BCB6B6">
+                <blockquote class="blockquote mb-0">
+                  <p>"All grown-ups were once children... but only few of them remember it."</p>
+                  <footer class="blockquote-footer">
+                    <small>
+                      Antoine de Saint-Exupéry <cite title="Source Title">The Little Prince</cite>
+                    </small>
+                  </footer>
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Synthetic image generation project</h5>
+                  <p class="card-text">Synthetic GAN based models for facial expression generation via latent space manipulation.</p>
+                  <a target="_blank" href="https://www.dc.uba.ar/estudiantes-participan-en-destacados-proyectos-de-investigacion-sobre-procesamiento-de-imagenes/">UBA blogpost [ES]</a>, <a target="_blank"  href="https://ojs.sadio.org.ar/index.php/JAIIO/article/view/390">Conference paper [ES]</a>
+                  <p class="card-text"><small class="text-muted">since 2021, ArtGAN group</small></p>
+                </div>
+            </div>
+        </div> <!-- random group: card-columns -->
+    </div> <!-- container -->
+</section>
+
+
+       
+        
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Mateo Suffern 2024</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <!--<a class="btn btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>-->
+                <!--<a class="btn btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>-->
+                <a class="btn btn-social mx-2" target="_blank" href="https://www.linkedin.com/in/mateo-suffern" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!--<div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            </div>-->
+        </div>
+    </div>
+</footer>
+        
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- noise -->
+<script type="module" src="js/mateo.js"></script>
+        
+</body>
+</html>
