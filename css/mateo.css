@@ -1,0 +1,101 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0; 
+  padding: 0; 
+  border: none;
+}
+
+.a{
+  color: #C2B6A1 !important;
+}
+
+.brown {
+    color: #C2B6A1! important;
+}
+
+.green{
+  color: #6D9E5C;
+}
+
+.card-header{
+  color: #6D9E5C;
+  font-weight: bold;
+  border-bottom: 5px solid #6D9E5C !important;
+  background-color: white !important;
+}
+
+.masthead {
+  background-color: #F2F2F2; /*#BCB6B6;*/  
+}
+
+#res-canvas {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid #F2F2F2;
+}
+
+/* aka navbar */
+.matnav-container {
+  position: absolute;
+  top: 0;
+  /*left: 50%;*/
+  padding: 0.4rem;
+  /*background-color: white;*/
+  color: black;
+}
+
+/* aka mateo header */
+.mattitle-container {
+  position: absolute;
+  top: 5em;
+  text-align: center;
+  width: 100%;
+  /*left: 50%;*/
+  padding: 0.4rem;
+  /*background-color: white;*/
+  color: black;
+}
+@media (min-width: 1200px) {
+  .mattitle-container {
+    top: 15em;
+  }
+}
+
+
+.card-columns {
+  column-count: 1 !important;
+}
+@media (min-width: 600px) {
+  .card-columns {
+    column-count: 2 !important;  
+  }
+}
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3 !important;  
+  }
+}
+
+/*
+
+.card-columns {
+  column-count: 2 !important; 
+}
+@media (sm) {
+  column-count: 4 !important;
+}
+
+*/
+
+
+
